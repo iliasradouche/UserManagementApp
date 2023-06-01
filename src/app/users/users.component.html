@@ -1,0 +1,66 @@
+<div class="users w-100">
+  <div class="row w-100" *ngIf="users">
+    <h2 class="" [translate]="'users.list'">List of Users</h2>
+    <div class="text-end mb-3">
+      <button type="button" class="btn btn-success" [translate]="'header.addUser'">+ Add User</button>
+    </div>
+    <table class="table table-borderless w-100">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col" [translate]="'users.id'">ID</th>
+          <th scope="col" [translate]="'users.avatar'">Avatar</th>
+          <th scope="col" [translate]="'users.firstName'">First Name</th>
+          <th scope="col" [translate]="'users.lastName'">Last Name</th>
+          <th scope="col" [translate]="'users.email'">Email Address</th>
+          <th scope="col" [translate]="'users.action'">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <th scope="row">{{ user.id }}</th>
+          <td>
+            <img [src]="user.avatar" alt="User Avatar" class="rounded-circle" width="30" height="30" />
+          </td>
+          <td>{{ user.first_name }} </td>
+          <td>{{ user.last_name }}</td>
+          <td><a href="#">{{ user.email }}</a></td>
+          <td>
+            <div ngbDropdown class="dropdown">
+              <button ngbDropdownToggle class="btn btn-secondary dropdown-toggle-text-only" type="button" id="dropdownMenuButton1" aria-expanded="false" [translate]="'users.action'">
+                Action
+              </button>
+              <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+                <li><a ngbDropdownItem href="#" [translate]="'users.action.update'">Update</a></li>
+                <li><a ngbDropdownItem href="#" [translate]="'users.action.delete'">Delete</a></li>
+              </ul>
+            </div>            
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <nav class="d-flex justify-content-center">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous" (click)="previousPage()" [translate]="'pagination.previous'">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only"></span>
+          </a>
+        </li>
+        <li class="page-item" *ngFor="let page of totalPages">
+          <a class="page-link" href="#" (click)="getPage(page)">{{ page }}</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next" (click)="nextPage()" [translate]="'pagination.next'">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div *ngIf="!users">
+    <p class="mt-4" [translate]="'users.loading'">Loading users...</p>
+  </div>
+</div>

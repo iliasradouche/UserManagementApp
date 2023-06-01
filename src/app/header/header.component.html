@@ -1,0 +1,17 @@
+<header>
+  <div class="navbar navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <h2 class="text-light mb-0" [translate]="'header.title'">Angular training</h2>
+        <p class="text-secondary mb-0 float-end" [translate]="'header.subtitle'">This is my project</p>
+      </div>
+      <div class="language-select">
+        <label for="language-select" class="text-light" [translate]="'header.language'">Langue:</label>
+        <select id="language-select" [(ngModel)]="selectedLanguage" (change)="switchLanguage(selectedLanguage)" class="form-control">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,22 @@
+{
+    "header.title": "Angulair training",
+    "header.subtitle": "This is my project",
+    "header.language": "Language:",
+    "header.addUser": "+ Add User",
+    "users.list": "List of Users",
+    "users.loading": "Loading users...",
+    "users.pagination.previous": "",
+    "users.pagination.next": "",
+    "users.action": "Action",
+    "users.action.update": "Update",
+    "users.action.delete": "Delete",
+    "users.id":"Id",
+    "users.avatar" :"Avatar",
+    "users.firstName":"First Name",
+    "users.lastName":"Last Name",
+    "users.email":"Email adresse",
+    "sidebar.home":"Home",
+    "sidebar.manageUsers":"Mange users",
+    "welcome.message":"Welcome to our angular application"
+  }
+  

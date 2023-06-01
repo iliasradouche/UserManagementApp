@@ -1,0 +1,22 @@
+{
+    "header.title": "Entrainement d'angulair",
+    "header.subtitle": "C'est Mon projet",
+    "header.language": "Langues:",
+    "header.addUser": "+ Nouveau",
+    "users.list": "List des utilisateurs",
+    "users.loading": "Chatgement d'utilisateurs...",
+    "users.pagination.previous": "",
+    "users.pagination.next": "",
+    "users.action": "Action",
+    "users.action.update": "Modifier",
+    "users.action.delete": "Supprimer",
+    "users.id":"Id",
+    "users.avatar" :"Avatar",
+    "users.firstName":"Prenom",
+    "users.lastName":"Nom",
+    "users.email":"Adresse Email",
+    "sidebar.home":"Acceuil",
+    "sidebar.manageUsers":"Gerer utilisateurs",
+    "welcome.message":"Bienvenue sur notre application Angular !"
+  }
+  

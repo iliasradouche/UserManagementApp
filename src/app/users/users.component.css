@@ -1,0 +1,14 @@
+.dropdown-toggle-text-only {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  color: inherit;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;  
+}
