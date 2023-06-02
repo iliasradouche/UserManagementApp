@@ -43,4 +43,9 @@ export class UsersComponent {
       this.getUsers(this.currentPage);
     }
   }
+
+  deleteUser(userId: number) {
+    this.users = this.users.filter(user => user.id !== userId);
+  }
+  
 }

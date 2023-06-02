@@ -30,8 +30,8 @@
                 Action
               </button>
               <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
-                <li><a ngbDropdownItem href="#" [translate]="'users.action.update'">Update</a></li>
-                <li><a ngbDropdownItem href="#" [translate]="'users.action.delete'">Delete</a></li>
+                <li><a ngbDropdownItem [translate]="'users.action.update'">Update</a></li>
+                <li><a ngbDropdownItem (click)="deleteUser(user.id)" [translate]="'users.action.delete'">Delete</a></li>
               </ul>
             </div>            
           </td>
