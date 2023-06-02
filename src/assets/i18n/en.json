@@ -1,5 +1,5 @@
 {
-    "header.title": "Angulair training",
+    "header.title": "Angular training",
     "header.subtitle": "This is my project",
     "header.language": "Language:",
     "header.addUser": "+ Add User",
@@ -16,7 +16,7 @@
     "users.lastName":"Last Name",
     "users.email":"Email adresse",
     "sidebar.home":"Home",
-    "sidebar.manageUsers":"Mange users",
+    "sidebar.manageUsers":"Manage users",
     "welcome.message":"Welcome to our angular application"
   }
   
